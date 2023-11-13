@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalChooserActivity">
+
+    <TextView
+        android:id="@+id/animalChooserHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rate Your Favorite Animal!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/animalChooserPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Press on the images below to rate your favorite animal."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalChooserHeader" />
+
+    <ImageButton
+        android:id="@+id/dogImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:maxHeight="180dp"
+        android:onClick="onImageButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalChooserPrompt"
+        app:srcCompat="@drawable/dog"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/catImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:maxHeight="180dp"
+        android:onClick="onImageButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalChooserPrompt"
+        app:srcCompat="@drawable/cat"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/bearImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:maxHeight="180dp"
+        android:onClick="onImageButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogImageButton"
+        app:srcCompat="@drawable/bear"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/rabbitImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:maxHeight="180dp"
+        android:onClick="onImageButtonClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catImageButton"
+        app:srcCompat="@drawable/rabbit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dogRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Rating:"
+        app:layout_constraintEnd_toEndOf="@+id/dogImageButton"
+        app:layout_constraintStart_toStartOf="@+id/dogImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/dogImageButton" />
+
+    <TextView
+        android:id="@+id/catRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Rating:"
+        app:layout_constraintEnd_toEndOf="@+id/catImageButton"
+        app:layout_constraintStart_toStartOf="@+id/catImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/catImageButton" />
+
+    <TextView
+        android:id="@+id/bearRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Rating:"
+        app:layout_constraintEnd_toEndOf="@+id/bearImageButton"
+        app:layout_constraintStart_toStartOf="@+id/bearImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/bearImageButton" />
+
+    <TextView
+        android:id="@+id/rabbitRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Rating:"
+        app:layout_constraintEnd_toEndOf="@+id/rabbitImageButton"
+        app:layout_constraintStart_toStartOf="@+id/rabbitImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/rabbitImageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
